@@ -1,3 +1,5 @@
+![Hamdy Tabsissi — Sécurité du cloud & Zero Trust](banniere.svg)
+
 # Hamdy Tabsissi
 
 **Systems & Workplace Administrator** — Action contre la Faim
