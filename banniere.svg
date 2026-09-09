@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="Hamdy Tabsissi">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#070a10"/><stop offset="55%" stop-color="#0d131c"/><stop offset="100%" stop-color="#141c28"/></linearGradient>
+    <radialGradient id="halo" cx="82%" cy="30%" r="46%"><stop offset="0%" stop-color="#f2a63b" stop-opacity="0.20"/><stop offset="55%" stop-color="#f2a63b" stop-opacity="0.05"/><stop offset="100%" stop-color="#f2a63b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="filet" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f2a63b" stop-opacity="0"/><stop offset="18%" stop-color="#f2a63b" stop-opacity="0.9"/><stop offset="70%" stop-color="#f2a63b" stop-opacity="0.35"/><stop offset="100%" stop-color="#f2a63b" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1280" height="320" fill="url(#fond)"/>
+  <rect width="1280" height="320" fill="url(#halo)"/>
+  <g fill="#ffffff">
+    <circle cx="70" cy="52" r="1.1" opacity=".55"/><circle cx="182" cy="118" r="0.8" opacity=".35"/><circle cx="121" cy="238" r="1" opacity=".45"/><circle cx="268" cy="46" r="0.9" opacity=".4"/><circle cx="331" cy="196" r="1.2" opacity=".5"/><circle cx="405" cy="86" r="0.7" opacity=".3"/><circle cx="486" cy="268" r="1" opacity=".4"/><circle cx="561" cy="140" r="0.8" opacity=".3"/><circle cx="642" cy="60" r="1.1" opacity=".45"/><circle cx="712" cy="226" r="0.9" opacity=".35"/><circle cx="806" cy="102" r="1" opacity=".4"/><circle cx="884" cy="258" r="0.8" opacity=".3"/><circle cx="944" cy="44" r="1.2" opacity=".5"/><circle cx="1024" cy="176" r="0.9" opacity=".35"/><circle cx="1102" cy="88" r="1" opacity=".45"/><circle cx="1168" cy="242" r="0.8" opacity=".3"/><circle cx="1224" cy="132" r="1.1" opacity=".4"/>
+  </g>
+  <g fill="#f2a63b"><circle cx="352" cy="72" r="1.3" opacity=".55"/><circle cx="676" cy="284" r="1.2" opacity=".45"/><circle cx="1062" cy="52" r="1.4" opacity=".5"/></g>
+  <g opacity="0.9">
+    <circle cx="1092" cy="168" r="58" fill="#101822"/>
+    <circle cx="1092" cy="168" r="58" fill="none" stroke="#f2a63b" stroke-opacity=".45" stroke-width="1.2"/>
+    <ellipse cx="1092" cy="168" rx="92" ry="22" fill="none" stroke="#f2a63b" stroke-opacity=".28" stroke-width="1.2" transform="rotate(-18 1092 168)"/>
+    <circle cx="1070" cy="150" r="9" fill="#0a1017" opacity=".8"/>
+    <circle cx="1108" cy="186" r="6" fill="#0a1017" opacity=".7"/>
+  </g>
+  <rect x="88" y="70" width="700" height="1.5" fill="url(#filet)"/>
+  <text x="88" y="126" font-family="monospace" font-size="17" letter-spacing="6.5" fill="#f2a63b" opacity=".92">SECURITE DU CLOUD &#183; ZERO TRUST</text>
+  <text x="86" y="196" font-family="Segoe UI,Inter,system-ui,sans-serif" font-size="62" font-weight="700" fill="#f4f6f8">Hamdy Tabsissi</text>
+  <text x="88" y="234" font-family="Segoe UI,Inter,system-ui,sans-serif" font-size="19" fill="#8b98a8">Systems &amp; Workplace Administrator &#183; Master Cybers&#233;curit&#233; &#183; Azure &#183; Microsoft 365 &#183; Cloudflare</text>
+  <rect x="88" y="258" width="266" height="34" rx="17" fill="#f2a63b" fill-opacity="0.10" stroke="#f2a63b" stroke-opacity="0.55"/>
+  <text x="110" y="280" font-family="monospace" font-size="15" fill="#f2a63b">&#8594; hamdy-tabsissi.com</text>
+</svg>
