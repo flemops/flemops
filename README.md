@@ -2,64 +2,58 @@
 
 # Hamdy Tabsissi
 
-**Systems & Workplace Administrator** — Action contre la Faim
-Master Cybersécurité, SUP DE VINCI · Microsoft 365 · Azure · Cloud & Identity
+**IT Support Officer — Action contre la Faim** · en évolution vers **Systems & Workplace Administrator**
+Master Cybersécurité (SUP DE VINCI) · Microsoft 365 · Azure · automatisation
 
-J'exploite une infrastructure personnelle en production depuis août 2026 : un site, trois applications, des sauvegardes chiffrées hors-site et un déploiement continu. Je documente surtout ce qui casse — c'est là qu'on apprend.
+Je transforme des besoins en systèmes utiles : je comprends comment les gens travaillent, je conçois la solution, puis je la construis, l'automatise et l'explique. J'exploite en conditions réelles une petite infrastructure personnelle depuis août 2026, et je documente surtout ce qui casse.
 
-### **[→ hamdy-tabsissi.com](https://hamdy-tabsissi.com)**
-
----
-
-## L'infrastructure
-
-Une VM Oracle ARM (4 OCPU / 24 Go) sous Ubuntu, derrière Cloudflare.
-
-| | |
-|---|---|
-| **Exposition** | Cloudflare Tunnel. **Aucun port entrant ouvert**, pare-feu restreint aux plages Cloudflare. Administration derrière Cloudflare Access (SSO + JWT vérifié contre le JWKS) |
-| **Durcissement** | nginx noté **A+** sur les en-têtes de sécurité · fail2ban · mises à jour automatiques · services systemd contraints (`NoNewPrivileges`) · applications en écoute loopback uniquement |
-| **Déploiement** | CI/CD **pull-based** : GitHub Actions valide et déplace un tag, la machine vient le chercher. **Aucun identifiant d'accès à la VM n'existe chez GitHub.** Healthcheck après chaque mise en ligne, rollback automatique et mise en quarantaine du commit fautif |
-| **Sauvegardes** | Litestream (réplication SQLite continue) et restic vers Cloudflare R2, chiffrées, hors-site. Restaurations contrôlées par comparaison d'empreintes SHA-256 |
-| **Supervision** | Uptime Kuma · moniteur externe indépendant · dead man's switch auto-hébergé |
-| **Automatisation** | n8n auto-hébergé : veille de disponibilité, digests programmés, alertes Telegram routées par thème |
-| **Conformité** | Matomo auto-hébergé (anonymisation IP, rétention 25 mois) · registre RGPD · SMSI ISO 27001 avec analyse de risques EBIOS RM et Déclaration d'Applicabilité |
+### **[→ hamdy-tabsissi.com](https://hamdy-tabsissi.com)** · [LinkedIn](https://www.linkedin.com/in/hamdy-tabsissi/)
 
 ---
 
-## Projets
+## Trois projets signature
 
-| Projet | Description | Stack |
+| Projet | Ce que c'est | Preuve |
 |---|---|---|
-| **[Portfolio](https://hamdy-tabsissi.com)** | Site personnel à accès nominatif : chaque recruteur reçoit un lien qui lui est propre, les consultations sont tracées | Node · Express · node:sqlite · CSS moderne (`@container`, `:has()`, `color-mix()`) |
-| **EventMap** *(privé)* | Agrégateur d'événements Paris ↔ Nanterre ↔ Montreuil : une proposition, au bon moment, déjà filtrée | Python · FastAPI · Leaflet · SQLite |
-| **Observatory** *(privé)* | Tableau de bord d'état des services, protégé par vérification cryptographique du jeton Cloudflare Access | Python · FastAPI |
-| **Mindmap** *(privé)* | Carte mentale fractale à navigation spatiale, canvas 2D sans aucune librairie | JavaScript vanilla |
+| **[EventMap](https://github.com/flemops/eventmap)** — *production* | Agrégateur d'événements culturels : ingestion polie de sources ouvertes, déduplication réversible, santé stricte, déploiement conditionné par une CI | [Démo en ligne](https://eventmap.hamdy-tabsissi.com) · tests, CI, journal de décisions et d'incidents dans le dépôt |
+| **[Alim'confiance Archive](https://github.com/flemops/alimconfiance-archive)** — *production* | Archive hebdomadaire versionnée d'un jeu de données officiel que l'État ne publie que sur 12 mois glissants | Un snapshot par semaine depuis le 16/08/2026, exécutions publiques, procédure de vérification |
+| **[ci-templates](https://github.com/flemops/ci-templates)** — *DevOps* | Workflow GitHub Actions réutilisable et script de déploiement pull-based avec retour arrière automatique, utilisés par 4 applications | Versionné par release, actions épinglées par SHA, utilisé par EventMap (exécutions publiques) |
 
-### Master Cybersécurité — SUP DE VINCI
+Aussi public : **[Mindmap](https://github.com/flemops/mindmap)** (carte mentale 3D en Three.js, [démo](https://mindmap.hamdy-tabsissi.com)).
 
-| Projet | Contenu |
+## Infrastructure — ce qui est en place
+
+Une machine virtuelle Oracle (ARM, Ubuntu) derrière Cloudflare, qui héberge le portfolio, EventMap et quelques outils.
+
+- **Accès** : services en écoute locale derrière nginx ; zones d'administration derrière Cloudflare Access ; SSH par clé uniquement (mot de passe désactivé), fail2ban.
+- **Déploiement** : pull-based — GitHub valide et déplace un tag, la machine vient le chercher ; healthcheck, retour arrière automatique et mise en quarantaine du commit fautif. GitHub ne détient aucun identifiant d'accès à la machine.
+- **Sauvegardes** : réplication SQLite continue et sauvegardes chiffrées hors-site, restauration testée.
+- **Supervision** : Uptime Kuma, sondes planifiées GitHub Actions pour EventMap, alertes Telegram via n8n auto-hébergé.
+- **Gouvernance** : démarche SMSI de type ISO 27001 documentée (analyse de risques EBIOS RM, déclaration d'applicabilité) — démarche personnelle, **non certifiée** ; mesure d'audience auto-hébergée et anonymisée.
+
+## Académique (cadre : cursus SUPDEVINCI)
+
+Des travaux de cursus, présentés comme tels, avec contribution et limites dans chaque dépôt : **[Cloud hybride](https://github.com/flemops/Projet-Cloud-Hybrid)** (Active Directory et messagerie, dont ma part personnelle ; cas fictif), [SIEM](https://github.com/flemops/Projet-SIEM), [SOC](https://github.com/flemops/Projet-SOC), [Root-Me](https://github.com/flemops/Projet-Root-Me) (exercice contrôlé). Ils n'ont pas valeur d'expérience professionnelle.
+
+## Labs, outils tiers, archives, privé
+
+- **Lab** : [alpaca-lab](https://github.com/flemops/alpaca-lab) — backtest et paper trading uniquement, aucun conseil financier.
+- **Fork tiers** : [mission-control](https://github.com/flemops/mission-control) — fork de `builderz-labs/mission-control`, utilisé tel quel, aucun commit personnel.
+- **Archivé** : [trier-mes-mails](https://github.com/flemops/trier-mes-mails) — script Gmail abandonné.
+- **Privé volontairement** : le portfolio (accès nominatif), Observatory (supervision), les documents internes du SMSI et un espace de travail personnel.
+
+Carte complète des 16 dépôts et de leur statut : [docs/CARTE-DES-DEPOTS.md](docs/CARTE-DES-DEPOTS.md).
+
+## Trois leçons d'exploitation
+
+| Ce qui s'est passé | Ce que j'en retiens |
 |---|---|
-| **[SOC externalisé](https://github.com/flemops/Projet-SOC)** | Conception complète d'un centre opérationnel de sécurité pour un cas client : agents Wazuh, détection Suricata derrière pfSense, tunnel chiffré, chaîne Logstash vers Elasticsearch, alerting, TheHive et Cortex. Conformité ISO/IEC 27001, RGPD et NIS |
-| **[SIEM](https://github.com/flemops/Projet-SIEM)** | Centralisation et corrélation de journaux |
-| **[Cloud hybride](https://github.com/flemops/Projet-CLoud-Hybrid)** | Architecture mixte on-premise / cloud |
-| **[Root-Me](https://github.com/flemops/Projet-Root-Me)** | Analyse et exploitation en environnement contrôlé |
+| Un script de déploiement écrasait la configuration nginx durcie : le site répondait 200, les en-têtes de sécurité avaient disparu | Un healthcheck qui répond 200 ne dit pas que tout va bien : vérifier ce qui compte |
+| Une collecte de données échouait en silence depuis des semaines | L'absence d'erreur n'est pas un signe de bonne santé : surveiller la fraîcheur des données, pas seulement le code de sortie |
+| La supervision tournait sur la machine qu'elle surveille | Un surveillant hébergé sur ce qu'il surveille ne préviendra jamais de sa propre panne : au moins un observateur extérieur |
+
+Une sauvegarde jamais restaurée n'est pas une sauvegarde, c'est une hypothèse.
 
 ---
 
-## Quatre pannes, quatre leçons
-
-Ce que l'exploitation réelle m'a appris, et que la théorie ne m'avait pas dit.
-
-| L'incident | Ce que j'en ai tiré |
-|---|---|
-| Un bot Telegram ne recevait plus aucun message. Le service tournait, le réseau répondait, la configuration était juste. **Cloudflare Access renvoyait les serveurs de Telegram vers une page de connexion** : ils recevaient une redirection au lieu de mon application | Un composant qui protège tout protège aussi contre ce qu'on attendait. Il faut savoir **par où entre chaque appelant**, y compris les machines |
-| Un script de déploiement écrasait la configuration nginx durcie. Le site répondait 200 après chaque mise en ligne — les en-têtes de sécurité, eux, avaient disparu | **Un healthcheck qui répond 200 ne dit pas que tout va bien.** Il faut vérifier ce qui compte, pas ce qui est facile à mesurer |
-| Une collecte de données échouait en silence depuis des semaines. Aucune alerte : le script mourait proprement | L'absence d'erreur n'est pas un signe de bonne santé. **Il faut surveiller la fraîcheur des données**, pas seulement le code de sortie |
-| Mes trois systèmes de surveillance tournaient sur la machine qu'ils surveillaient | Un surveillant hébergé sur ce qu'il surveille **ne préviendra jamais de sa propre panne**. Il faut au moins un observateur extérieur |
-
-Et une règle que je m'applique partout : **une sauvegarde jamais restaurée n'est pas une sauvegarde, c'est une hypothèse.** Vérifier une empreinte ne prouve rien tant qu'on n'a pas reconstruit la machine à partir de zéro.
-
----
-
-**[hamdy-tabsissi.com](https://hamdy-tabsissi.com)** · [LinkedIn](https://www.linkedin.com/in/hamdy-tabsissi/) · [TryHackMe](https://tryhackme.com/r/p/4y4n0k0j1)
+[hamdy-tabsissi.com](https://hamdy-tabsissi.com) · [LinkedIn](https://www.linkedin.com/in/hamdy-tabsissi/) · [TryHackMe](https://tryhackme.com/r/p/4y4n0k0j1)
