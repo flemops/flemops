@@ -16,10 +16,10 @@ Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne so
 | [mission-control](https://github.com/flemops/mission-control) | THIRD-PARTY-FORK | public | utilisé tel quel | MIT (upstream) | 0 commit propre : pas un projet de Hamdy |
 | [trier-mes-mails](https://github.com/flemops/trier-mes-mails) | ARCHIVE | public, archivé | abandonné | aucune | Remplacé par règles de messagerie et n8n |
 | [flemops](https://github.com/flemops/flemops) | PROFIL | public | actif | — | README de profil |
-| [portfolio.hamdy-tabsissi.com](https://github.com/flemops/portfolio.hamdy-tabsissi.com) | PRIVATE-OPS | **privé** | actif, production | — | Code du site live ; la valeur est portée par le site |
-| [observatory](https://github.com/flemops/observatory) | PRIVATE-OPS | **privé** | actif, production | — | Contient des informations opérationnelles |
-| [smsi-interne](https://github.com/flemops/smsi-interne) | PRIVATE-OPS | **privé, jamais public** | actif | — | État détaillé des défenses : informations sensibles |
-| [atelier-claude](https://github.com/flemops/atelier-claude) | WORKSPACE | **privé** | actif | — | Espace de travail personnel |
+| `portfolio.hamdy-tabsissi.com` | PRIVATE-OPS | **privé** | actif, production | — | Code du site live ; la valeur est portée par le site |
+| `observatory` | PRIVATE-OPS | **privé** | actif, production | — | Contient des informations opérationnelles |
+| `smsi-interne` | PRIVATE-OPS | **privé, jamais public** | actif | — | État détaillé des défenses : informations sensibles |
+| `atelier-claude` | WORKSPACE | **privé** | actif | — | Espace de travail personnel |
 
 Règle de publication : un dépôt privé ne devient public qu'après analyse de l'historique (secrets, données personnelles, informations d'infrastructure), des captures, des configurations et des licences.
 
