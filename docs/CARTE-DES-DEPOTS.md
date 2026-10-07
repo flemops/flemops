@@ -22,3 +22,16 @@ Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne so
 | [atelier-claude](https://github.com/flemops/atelier-claude) | WORKSPACE | **privé** | actif | — | Espace de travail personnel |
 
 Règle de publication : un dépôt privé ne devient public qu'après analyse de l'historique (secrets, données personnelles, informations d'infrastructure), des captures, des configurations et des licences.
+
+## Contrôles de base selon le type de dépôt
+
+| Type | Contrôles attendus | État au 07/10/2026 |
+|---|---|---|
+| Application avec code | installation propre, lint, tests, audit des dépendances, détection de secrets, permissions minimales, délai maximal, actions épinglées par SHA | eventmap : complet ; portfolio : tests, contraste, captures, gitleaks, audit npm ; mindmap : tests, gitleaks, audit npm ; observatory : tests, gitleaks, pip-audit ; alpaca-lab : tests, ruff, pip-audit |
+| Dépôt de snapshots | téléchargement, validation (taille, en-tête), idempotence, provenance | alimconfiance-archive : garde-fous et idempotence dans le workflow |
+| Gabarit CI | validation par exécution depuis un consommateur, actions épinglées | ci-templates |
+| Documentaire / académique / fork | aucun pipeline inventé | aucun |
+
+Dependabot : uniquement là où il y a de vraies dépendances (npm : portfolio, mindmap ; pip : eventmap, observatory), mises à jour groupées mensuelles. Actions GitHub : épinglées par SHA vérifié sur la release officielle, mises à jour à la main. Historique Git analysé avant toute publication ; aucun secret trouvé sur les 16 dépôts (un identifiant de messagerie personnel non secret a été retiré de l'historique de ci-templates avant publication).
+
+Guide de rédaction des README : [GABARITS-README.md](GABARITS-README.md).
