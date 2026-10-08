@@ -4,7 +4,7 @@ Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne so
 
 | Dépôt | Rôle | Visibilité | Statut | Licence | Justification |
 |---|---|---|---|---|---|
-| [eventmap](https://github.com/flemops/eventmap) | FLAGSHIP | public | actif, production | MIT (code) ; données : licences des sources | Application complète, CI/CD, tests, décisions documentées |
+| [eventmap.hamdy-tabsissi.com](https://github.com/flemops/eventmap.hamdy-tabsissi.com) | FLAGSHIP | public | actif, production | MIT (code) ; données : licences des sources | Application complète, CI/CD, tests, décisions documentées |
 | [alimconfiance-archive](https://github.com/flemops/alimconfiance-archive) | FLAGSHIP | public | actif, production | MIT (code) ; données : Licence Ouverte | Preuve simple et vérifiable d'une chaîne d'archivage |
 | [ci-templates](https://github.com/flemops/ci-templates) | SUPPORT/DEVOPS | public | actif | MIT | Mécanisme de déploiement réutilisé par 4 applications |
 | [mindmap](https://github.com/flemops/mindmap) | LAB (démo en production) | public | actif | MIT | Réalisation visuelle Three.js, démo publique |
