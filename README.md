@@ -21,7 +21,7 @@ Je transforme des besoins en systèmes utiles : je comprends comment les gens tr
 | **[Alim'confiance Archive](https://github.com/flemops/alimconfiance-archive)** — *production* | Archive hebdomadaire versionnée d'un jeu de données officiel que l'État ne publie que sur 12 mois glissants | Un snapshot par semaine depuis le 16/08/2026, exécutions publiques, procédure de vérification |
 | **[ci-templates](https://github.com/flemops/ci-templates)** — *DevOps* | Workflow GitHub Actions réutilisable et script de déploiement pull-based avec retour arrière automatique, utilisés par 4 applications | Versionné par release, actions épinglées par SHA, utilisé par EventMap (exécutions publiques) |
 
-Aussi public : **[Mindmap](https://github.com/flemops/mindmap)** (carte mentale 3D en Three.js, [démo](https://mindmap.hamdy-tabsissi.com)).
+Aussi public : **[Mindmap](https://github.com/flemops/mindmap.hamdy-tabsissi.com)** (carte mentale 3D en Three.js, [démo](https://mindmap.hamdy-tabsissi.com)).
 
 ## Infrastructure — ce qui est en place
 

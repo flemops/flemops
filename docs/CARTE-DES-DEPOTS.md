@@ -7,7 +7,7 @@ Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne so
 | [eventmap.hamdy-tabsissi.com](https://github.com/flemops/eventmap.hamdy-tabsissi.com) | FLAGSHIP | public | actif, production | MIT (code) ; données : licences des sources | Application complète, CI/CD, tests, décisions documentées |
 | [alimconfiance-archive](https://github.com/flemops/alimconfiance-archive) | FLAGSHIP | public | actif, production | MIT (code) ; données : Licence Ouverte | Preuve simple et vérifiable d'une chaîne d'archivage |
 | [ci-templates](https://github.com/flemops/ci-templates) | SUPPORT/DEVOPS | public | actif | MIT | Mécanisme de déploiement réutilisé par 4 applications |
-| [mindmap](https://github.com/flemops/mindmap) | LAB (démo en production) | public | actif | MIT | Réalisation visuelle Three.js, démo publique |
+| [mindmap.hamdy-tabsissi.com](https://github.com/flemops/mindmap.hamdy-tabsissi.com) | LAB (démo en production) | public | actif | MIT | Réalisation visuelle Three.js, démo publique |
 | [alpaca-lab](https://github.com/flemops/alpaca-lab) | LAB | public | lab | aucune (par défaut) | Outil d'apprentissage, aucune prétention financière |
 | [Projet-Cloud-Hybrid](https://github.com/flemops/Projet-Cloud-Hybrid) | ACADEMIC | public | figé | aucune (documents de cursus) | AD / messagerie : contribution individuelle documentée |
 | [Projet-SIEM](https://github.com/flemops/Projet-SIEM) | ACADEMIC | public | figé | aucune | Rapport en binôme, limites explicites |
@@ -16,7 +16,7 @@ Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne so
 | [mission-control](https://github.com/flemops/mission-control) | THIRD-PARTY-FORK | public | utilisé tel quel | MIT (upstream) | 0 commit propre : pas un projet de Hamdy |
 | [trier-mes-mails](https://github.com/flemops/trier-mes-mails) | ARCHIVE | public, archivé | abandonné | aucune | Remplacé par règles de messagerie et n8n |
 | [flemops](https://github.com/flemops/flemops) | PROFIL | public | actif | — | README de profil |
-| `portfolio.hamdy-tabsissi.com` | PRIVATE-OPS | **privé** | actif, production | — | Code du site live ; la valeur est portée par le site |
+| `hamdy-tabsissi.com` | PRIVATE-OPS | **privé** | actif, production | — | Code du site live ; la valeur est portée par le site |
 | `observatory` | PRIVATE-OPS | **privé** | actif, production | — | Contient des informations opérationnelles |
 | `smsi-interne` | PRIVATE-OPS | **privé, jamais public** | actif | — | État détaillé des défenses : informations sensibles |
 | `atelier-claude` | WORKSPACE | **privé** | actif | — | Espace de travail personnel |
