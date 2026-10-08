@@ -17,7 +17,7 @@ Je transforme des besoins en systèmes utiles : je comprends comment les gens tr
 
 | Projet | Ce que c'est | Preuve |
 |---|---|---|
-| **[EventMap](https://github.com/flemops/eventmap)** — *production* | Agrégateur d'événements culturels : ingestion polie de sources ouvertes, déduplication réversible, santé stricte, déploiement conditionné par une CI | [Démo en ligne](https://eventmap.hamdy-tabsissi.com) · tests, CI, journal de décisions et d'incidents dans le dépôt |
+| **[EventMap](https://github.com/flemops/eventmap.hamdy-tabsissi.com)** — *production* | Agrégateur d'événements culturels : ingestion polie de sources ouvertes, déduplication réversible, santé stricte, déploiement conditionné par une CI | [Démo en ligne](https://eventmap.hamdy-tabsissi.com) · tests, CI, journal de décisions et d'incidents dans le dépôt |
 | **[Alim'confiance Archive](https://github.com/flemops/alimconfiance-archive)** — *production* | Archive hebdomadaire versionnée d'un jeu de données officiel que l'État ne publie que sur 12 mois glissants | Un snapshot par semaine depuis le 16/08/2026, exécutions publiques, procédure de vérification |
 | **[ci-templates](https://github.com/flemops/ci-templates)** — *DevOps* | Workflow GitHub Actions réutilisable et script de déploiement pull-based avec retour arrière automatique, utilisés par 4 applications | Versionné par release, actions épinglées par SHA, utilisé par EventMap (exécutions publiques) |
 
