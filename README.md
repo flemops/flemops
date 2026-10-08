@@ -9,6 +9,8 @@ Je transforme des besoins en systèmes utiles : je comprends comment les gens tr
 
 ### **[→ hamdy-tabsissi.com](https://hamdy-tabsissi.com)** · [LinkedIn](https://www.linkedin.com/in/hamdy-tabsissi/)
 
+**Tout ce que j'ai construit, avec statut, niveau de preuve et issue de chaque projet : [hamdy-tabsissi.com/builds](https://hamdy-tabsissi.com/builds).** Ce profil n'en montre qu'une sélection ; le catalogue complet vit sur le site.
+
 ---
 
 ## Trois projets signature
