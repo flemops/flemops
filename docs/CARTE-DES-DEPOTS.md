@@ -1,6 +1,6 @@
-# Carte des 16 dépôts — rôle, visibilité, statut
+# Carte des 19 dépôts — rôle, visibilité, statut
 
-Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne sont pas censés avoir tous le même niveau de preuve.
+Mise à jour : 17/10/2026 (ajout d'`ops`, `updatedesk` et `ci-templates-legacy`, absents de la carte du 07/10/2026). Chaque dépôt a un rôle unique ; les dépôts ne sont pas censés avoir tous le même niveau de preuve.
 
 | Dépôt | Rôle | Visibilité | Statut | Licence | Justification |
 |---|---|---|---|---|---|
@@ -18,8 +18,15 @@ Mise à jour : 07/10/2026. Chaque dépôt a un rôle unique ; les dépôts ne so
 | [flemops](https://github.com/flemops/flemops) | PROFIL | public | actif | — | README de profil |
 | `hamdy-tabsissi.com` | PRIVATE-OPS | **privé** | actif, production | — | Code du site live ; la valeur est portée par le site |
 | `observatory` | PRIVATE-OPS | **privé** | actif, production | — | Contient des informations opérationnelles |
+| `ops` | PRIVATE-OPS | **privé** | actif, livré le 17/10/2026 | — | Cockpit d'exploitation derrière Cloudflare Access ; contient des informations d'infrastructure |
+| `updatedesk` | PRIVATE-PRODUCT | **privé** | pré-version v0.1.0, en pause | — | Gestionnaire de mises à jour Windows ; jamais rendu public sans décision du propriétaire |
 | `smsi-interne` | PRIVATE-OPS | **privé, jamais public** | actif | — | État détaillé des défenses : informations sensibles |
 | `atelier-claude` | WORKSPACE | **privé** | actif | — | Espace de travail personnel |
+| `ci-templates-legacy` | ARCHIVE | **privé, archivé** | remplacé par `ci-templates` | — | Ancienne version, gardée pour l'historique |
+
+## Dépôts à épingler sur le profil (recommandation)
+
+L'épinglage ne se pilote pas par l'API GitHub : à faire à la main (Profil → Personnaliser vos épingles), quatre dépôts publics au plus, ceux qu'un visiteur peut vérifier : `eventmap.hamdy-tabsissi.com`, `alimconfiance-archive`, `ci-templates`, `mindmap.hamdy-tabsissi.com`. Les dépôts académiques, le fork et l'archive restent non épinglés ; le catalogue complet est sur [hamdy-tabsissi.com/builds](https://hamdy-tabsissi.com/builds).
 
 Règle de publication : un dépôt privé ne devient public qu'après analyse de l'historique (secrets, données personnelles, informations d'infrastructure), des captures, des configurations et des licences.
 
@@ -32,6 +39,6 @@ Règle de publication : un dépôt privé ne devient public qu'après analyse de
 | Gabarit CI | validation par exécution depuis un consommateur, actions épinglées | ci-templates |
 | Documentaire / académique / fork | aucun pipeline inventé | aucun |
 
-Dependabot : uniquement là où il y a de vraies dépendances (npm : portfolio, mindmap ; pip : eventmap, observatory), mises à jour groupées mensuelles. Actions GitHub : épinglées par SHA vérifié sur la release officielle, mises à jour à la main. Historique Git analysé avant toute publication ; aucun secret trouvé sur les 16 dépôts (un identifiant de messagerie personnel non secret a été retiré de l'historique de ci-templates avant publication).
+Dependabot : uniquement là où il y a de vraies dépendances (npm : portfolio, mindmap ; pip : eventmap, observatory), mises à jour groupées mensuelles. Actions GitHub : épinglées par SHA vérifié sur la release officielle, mises à jour à la main. Historique Git analysé avant toute publication ; aucun secret trouvé sur les 16 dépôts du contrôle du 07/10/2026 (un identifiant de messagerie personnel non secret a été retiré de l'historique de ci-templates avant publication).
 
 Guide de rédaction des README : [GABARITS-README.md](GABARITS-README.md).

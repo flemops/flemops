@@ -9,7 +9,9 @@ Je transforme des besoins en systèmes utiles : je comprends comment les gens tr
 
 ### **[→ hamdy-tabsissi.com](https://hamdy-tabsissi.com)** · [LinkedIn](https://www.linkedin.com/in/hamdy-tabsissi/)
 
-**Tout ce que j'ai construit, avec statut, niveau de preuve et issue de chaque projet : [hamdy-tabsissi.com/builds](https://hamdy-tabsissi.com/builds).** Ce profil n'en montre qu'une sélection ; le catalogue complet vit sur le site.
+**Tout ce que j'ai construit, avec statut, niveau de preuve et issue de chaque projet : [hamdy-tabsissi.com/builds](https://hamdy-tabsissi.com/builds).** Ce profil n'en montre qu'une sélection ; le catalogue complet (production, labs, projets terminés, privés) et sa [chronologie](https://hamdy-tabsissi.com/builds#timeline) vivent sur le site, et GitHub en est la couche technique : code, CI, historique.
+
+**Par où commencer, en deux minutes** : [EventMap](https://eventmap.hamdy-tabsissi.com) (un service en ligne qu'on peut ouvrir), puis la [CI d'Alim'confiance Archive](https://github.com/flemops/alimconfiance-archive/actions) (exécutions publiques), puis [ci-templates](https://github.com/flemops/ci-templates) (le mécanisme de déploiement derrière les deux).
 
 ---
 
@@ -42,9 +44,9 @@ Des travaux de cursus, présentés comme tels, avec contribution et limites dans
 - **Lab** : [alpaca-lab](https://github.com/flemops/alpaca-lab) — backtest et paper trading uniquement, aucun conseil financier.
 - **Fork tiers** : [mission-control](https://github.com/flemops/mission-control) — fork de `builderz-labs/mission-control`, utilisé tel quel, aucun commit personnel.
 - **Archivé** : [trier-mes-mails](https://github.com/flemops/trier-mes-mails) — script Gmail abandonné.
-- **Privé volontairement** : le portfolio (accès nominatif), Observatory (supervision), les documents internes du SMSI et un espace de travail personnel.
+- **Privé volontairement, mais présenté** : le [portfolio](https://hamdy-tabsissi.com/projet/portfolio-infra-auto-administree) (accès nominatif), Observatory (supervision) et OPS Center (cockpit d'exploitation) derrière Cloudflare Access, UpdateDesk (gestionnaire de mises à jour Windows, pré-version en pause), les documents internes du SMSI et un espace de travail personnel. Leur fiche sur [/builds](https://hamdy-tabsissi.com/builds) dit ce qui est vérifiable et ce qui ne l'est pas : aucun lien vers un dépôt privé, aucune capture d'écran restreinte.
 
-Carte complète des 16 dépôts et de leur statut : [docs/CARTE-DES-DEPOTS.md](docs/CARTE-DES-DEPOTS.md).
+Carte complète des 19 dépôts et de leur statut : [docs/CARTE-DES-DEPOTS.md](docs/CARTE-DES-DEPOTS.md).
 
 ## Trois leçons d'exploitation
 
