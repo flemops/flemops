@@ -24,9 +24,9 @@ Mise à jour : 17/10/2026 (ajout d'`ops`, `updatedesk` et `ci-templates-legacy`,
 | `atelier-claude` | WORKSPACE | **privé** | actif | — | Espace de travail personnel |
 | `ci-templates-legacy` | ARCHIVE | **privé, archivé** | remplacé par `ci-templates` | — | Ancienne version, gardée pour l'historique |
 
-## Dépôts à épingler sur le profil (recommandation)
+## Dépôts épinglés sur le profil (posés et vérifiés le 17/10/2026)
 
-L'épinglage ne se pilote pas par l'API GitHub : à faire à la main (Profil → Personnaliser vos épingles), quatre dépôts publics au plus, ceux qu'un visiteur peut vérifier : `eventmap.hamdy-tabsissi.com`, `alimconfiance-archive`, `ci-templates`, `mindmap.hamdy-tabsissi.com`. Les dépôts académiques, le fork et l'archive restent non épinglés ; le catalogue complet est sur [hamdy-tabsissi.com/builds](https://hamdy-tabsissi.com/builds).
+L'épinglage ne se pilote pas par l'API GitHub : posé à la main (Profil → Personnaliser vos épingles), puis relu par GraphQL. Quatre dépôts publics, ceux qu'un visiteur peut vérifier : `eventmap.hamdy-tabsissi.com`, `alimconfiance-archive`, `ci-templates`, `mindmap.hamdy-tabsissi.com`. `outils/registre-vs-github.mjs` du portfolio compare cette liste aux épingles réelles. Les dépôts académiques, le fork et l'archive restent non épinglés ; le catalogue complet est sur [hamdy-tabsissi.com/builds](https://hamdy-tabsissi.com/builds).
 
 Règle de publication : un dépôt privé ne devient public qu'après analyse de l'historique (secrets, données personnelles, informations d'infrastructure), des captures, des configurations et des licences.
 
