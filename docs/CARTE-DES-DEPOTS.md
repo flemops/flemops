@@ -17,7 +17,7 @@ Mise à jour : 17/10/2026 (ajout d'`ops`, `updatedesk` et `ci-templates-legacy`,
 | [trier-mes-mails](https://github.com/flemops/trier-mes-mails) | ARCHIVE | public, archivé | abandonné | aucune | Remplacé par règles de messagerie et n8n |
 | [flemops](https://github.com/flemops/flemops) | PROFIL | public | actif | — | README de profil |
 | `hamdy-tabsissi.com` | PRIVATE-OPS | **privé** | actif, production | — | Code du site live ; la valeur est portée par le site |
-| `observatory` | PRIVATE-OPS | **privé** | actif, production | — | Contient des informations opérationnelles |
+| `observatory.hamdy-tabsissi.com` (ex `observatory`, renommé le 17/10/2026) | PRIVATE-OPS | **privé** | actif, production | — | Contient des informations opérationnelles |
 | `ops` | PRIVATE-OPS | **privé** | actif, livré le 17/10/2026 | — | Cockpit d'exploitation derrière Cloudflare Access ; contient des informations d'infrastructure |
 | `updatedesk` | PRIVATE-PRODUCT | **privé** | pré-version v0.1.0, en pause | — | Gestionnaire de mises à jour Windows ; jamais rendu public sans décision du propriétaire |
 | `smsi-interne` | PRIVATE-OPS | **privé, jamais public** | actif | — | État détaillé des défenses : informations sensibles |
